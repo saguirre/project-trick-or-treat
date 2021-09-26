@@ -5,23 +5,31 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller;
-    public float RunSpeed = 40f;
 
-    private bool _jump = false;
-    private float _horizontalMove = 0f;
+    public Rigidbody2D rb;
+
+    Vector2 movement;
+
+    private Animator anim;
+
+    public float moveSpeed = 5f;
+
+    void Start() {
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        _horizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
-        if (Input.GetButtonDown("Jump")) _jump =true;
+        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        anim.SetFloat("speedX", movement.x);
+        anim.SetFloat("speedY", movement.y);
     }
 
     void FixedUpdate()
     {
         // Move character
-        controller.Move(_horizontalMove * Time.fixedDeltaTime, false, _jump);
-        _jump = false;
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
