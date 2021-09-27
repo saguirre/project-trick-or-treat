@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 1151002762}
   - component: {fileID: 1151002763}
   m_Layer: 3
-  m_Name: Prota test1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -566,12 +566,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5829147716411411247, guid: f8039894e037149478671fce33543827, type: 3}
+  m_Sprite: {fileID: 8244807994770546591, guid: 13caf39847f9147df9b07516ae1649e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 1, y: 1.46875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -667,18 +667,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.54891443, y: -0.6932894}
+  m_Offset: {x: 0.004110813, y: -0.37351322}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
-    oldSize: {x: 1.09375, y: 1.40625}
-    newSize: {x: 1.28, y: 1.28}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.46875}
+    newSize: {x: 1, y: 1.46875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1179895, y: 1.421736}
+  m_Size: {x: 0.7626829, y: 0.47425175}
   m_EdgeRadius: 0
 --- !u!95 &1151002763
 Animator:
