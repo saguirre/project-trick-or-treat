@@ -8,10 +8,10 @@ public class PlayerOnlyHMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    Vector2 movement;
+    Vector3 movement;
 
     private Animator anim;
-
+    public bool isGrounded = true;
     public float moveSpeed = 5f;
 
     void Start() {
@@ -21,13 +21,22 @@ public class PlayerOnlyHMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
+        Jump();
+        movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
         anim.SetFloat("speedX", movement.x);
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        // Move character
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        transform.position += movement * Time.fixedDeltaTime * moveSpeed;
+    }
+
+    void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            Debug.Log("Jumped");
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 4f), ForceMode2D.Impulse);
+        }
     }
 }
