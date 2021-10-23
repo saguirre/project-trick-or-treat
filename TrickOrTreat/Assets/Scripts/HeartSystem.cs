@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeartSystem : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class HeartSystem : MonoBehaviour
         if (dead)
         {
             // Game over
+            SceneManager.LoadScene("PlayerScene");
         }
     }
 
