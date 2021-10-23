@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rock
+  - Floor
+  - SkullMovementEndPosition
+  - Wall
   layers:
   - Default
   - TransparentFX
