@@ -39,7 +39,7 @@ public class HeartSystem : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Player collision");
-        if (collision.gameObject.CompareTag("Rock"))
+        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Skull"))
         {
             TakeDamage(1);
         }
