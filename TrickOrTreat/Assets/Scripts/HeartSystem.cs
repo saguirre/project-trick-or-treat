@@ -25,6 +25,8 @@ public class HeartSystem : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Player heart damaged");
+
         if (!dead)
         {
             life -= damage;

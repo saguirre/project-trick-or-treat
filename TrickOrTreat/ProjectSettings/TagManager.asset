@@ -9,6 +9,7 @@ TagManager:
   - SkullMovementEndPosition
   - Wall
   - Skull
+  - Timer
   layers:
   - Default
   - TransparentFX
