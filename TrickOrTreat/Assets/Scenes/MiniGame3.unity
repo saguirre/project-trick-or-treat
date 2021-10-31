@@ -1234,7 +1234,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
       propertyPath: m_Name
-      value: Zombie
+      value: Zombie1
       objectReference: {fileID: 0}
     - target: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
       propertyPath: m_TagString
@@ -1254,11 +1254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.214
+      value: -1.512
       objectReference: {fileID: 0}
     - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.002
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
       propertyPath: m_LocalPosition.z
