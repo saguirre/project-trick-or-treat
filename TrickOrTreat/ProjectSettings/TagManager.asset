@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Skull
   - Timer
+  - Zombie
   layers:
   - Default
   - TransparentFX
