@@ -16,8 +16,8 @@ public class HeadDeteacted : MonoBehaviour
     void Update()
     {
         if(dead){
-        movement = new Vector3(0f, -2,0f);
-        Enemy.transform.position = Enemy.transform.position + movement * Time.deltaTime;
+            movement = new Vector3(0f, -2,0f);
+            Enemy.transform.position = Enemy.transform.position + movement * Time.deltaTime;
         }
     }
 
