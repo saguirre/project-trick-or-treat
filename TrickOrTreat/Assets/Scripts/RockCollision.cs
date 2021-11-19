@@ -11,6 +11,8 @@ public class RockCollision : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        //TODO: Que no haga dano al player
+        //gameObject.SetActive(false);
         Destroy(gameObject, 0.3f);
     }
 }

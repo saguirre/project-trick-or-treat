@@ -37,6 +37,7 @@ public class PlayerOnlyHMovement : MonoBehaviour
         {
             Debug.Log("Jumped");
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 4f), ForceMode2D.Impulse);
+            SoundManagerScript.PlaySound("jumpPlayer");
         }
     }
 }

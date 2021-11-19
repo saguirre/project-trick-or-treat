@@ -21,6 +21,7 @@ public class GoMiniGame1 : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            SoundManagerScript.PlaySound("jumpPlayer");
             SceneManager.LoadScene("MiniGame1");
         }
     }

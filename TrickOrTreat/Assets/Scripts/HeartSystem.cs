@@ -35,6 +35,7 @@ public class HeartSystem : MonoBehaviour
             {
                 dead = true;
             }
+            SoundManagerScript.PlaySound("playerHit");
         }
     }
 
