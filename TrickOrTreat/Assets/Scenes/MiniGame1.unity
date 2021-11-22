@@ -1484,6 +1484,9 @@ MonoBehaviour:
   - {fileID: 1037075722}
   - {fileID: 184061665}
   - {fileID: 549199831}
+  sprite: {fileID: 1894788163}
+  flickerAmnt: 5
+  flickerDuration: 0.1
 --- !u!114 &1894788157
 MonoBehaviour:
   m_ObjectHideFlags: 0

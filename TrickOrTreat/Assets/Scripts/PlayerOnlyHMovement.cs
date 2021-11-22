@@ -21,9 +21,17 @@ public class PlayerOnlyHMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Jump();
-        movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-        anim.SetFloat("speedX", movement.x);
+        if(HeartSystem.canTakeDamage)
+        {
+            Jump();
+            movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+            anim.SetFloat("speedX", movement.x);
+        }
+        else
+        {
+            movement = new Vector3(0f, 0f, 0f);
+            anim.SetFloat("speedX", movement.x);
+        }
     }
 
     private void FixedUpdate()
