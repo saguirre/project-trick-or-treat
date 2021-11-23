@@ -23,8 +23,8 @@ public class HeartSystem : MonoBehaviour
     {
         if (dead)
         {
-            // Game over
-            SceneManager.LoadScene("PlayerScene");
+            SceneManager.LoadScene("GameOver");
+            //SceneManager.LoadScene("PlayerScene");
         }
     }
 

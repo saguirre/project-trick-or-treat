@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGame3.unity
     guid: 74589639304d84d159e73615975f1cd6
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 77f8ba3ab7e02d449807a455975411d3
   m_configObjects: {}
