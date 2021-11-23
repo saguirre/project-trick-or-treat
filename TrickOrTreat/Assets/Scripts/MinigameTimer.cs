@@ -30,7 +30,7 @@ public class MinigameTimer : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
-                SceneManager.LoadScene("PlayerScene");
+                SceneManager.LoadScene("NiceJob");
             }
         }
     }
