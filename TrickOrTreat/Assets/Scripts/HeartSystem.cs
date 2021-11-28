@@ -48,7 +48,7 @@ public class HeartSystem : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Player collision");
-        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Skull") || collision.gameObject.CompareTag("Zombie") )
+        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Skull") || collision.gameObject.CompareTag("Zombie"))
         {
             TakeDamage(1);
         }
@@ -59,11 +59,11 @@ public class HeartSystem : MonoBehaviour
         canTakeDamage = false;
         for (int i = 0; i < flickerAmnt; i++)
         {
-            sprite.color = new Color(1f, 1f, 1f,.5f);
+            sprite.color = new Color(1f, 1f, 1f, .5f);
             yield return new WaitForSeconds(flickerDuration);
             sprite.color = Color.white;
             yield return new WaitForSeconds(flickerDuration);
         }
-         canTakeDamage = true;
+        canTakeDamage = true;
     }
 }
