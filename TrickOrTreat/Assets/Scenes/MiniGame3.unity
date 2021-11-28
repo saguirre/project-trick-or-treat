@@ -538,7 +538,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549199831}
   m_CullTransparentMesh: 1
---- !u!1 &943519691
+--- !u!1 &886379237
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,68 +546,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 943519692}
-  - component: {fileID: 943519694}
-  - component: {fileID: 943519693}
+  - component: {fileID: 886379239}
+  - component: {fileID: 886379238}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Zombies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &943519692
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943519691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5429605261971976028}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &943519693
+--- !u!114 &886379238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943519691}
+  m_GameObject: {fileID: 886379237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58943774f17e44e97a3a49345ed1a567, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d0a1ddcb3d7446e4b502536e307cee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &943519694
-BoxCollider2D:
+  zombies: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
+--- !u!4 &886379239
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943519691}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_GameObject: {fileID: 886379237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037075722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1612653346
 GameObject:
@@ -1208,6 +1182,9 @@ MonoBehaviour:
   - {fileID: 1037075722}
   - {fileID: 184061665}
   - {fileID: 549199831}
+  sprite: {fileID: 0}
+  flickerAmnt: 0
+  flickerDuration: 0
 --- !u!114 &1616593772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,7 +1484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132336244
 GameObject:
@@ -1587,121 +1564,4 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 4.382025, y: 0.5781885}
-  m_EdgeRadius: 0
---- !u!1001 &5429605261971976026
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_Name
-      value: Zombie1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_TagString
-      value: Zombie
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.512
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.008
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
---- !u!1 &5429605261971976027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5429605260516810200, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-  m_PrefabInstance: {fileID: 5429605261971976026}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5429605261971976028 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5429605260516810207, guid: dc7a19e4de822413f8e93c31ba66ba1d, type: 3}
-  m_PrefabInstance: {fileID: 5429605261971976026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5429605261971976029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5429605261971976027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad031b468f8c4c17ba10a6675256562, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &5429605261971976030
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5429605261971976027}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1.64}
-    newSize: {x: 1, y: 1.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.64}
   m_EdgeRadius: 0
