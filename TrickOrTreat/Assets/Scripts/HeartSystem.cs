@@ -24,7 +24,6 @@ public class HeartSystem : MonoBehaviour
         if (dead)
         {
             SceneManager.LoadScene("GameOver");
-            //SceneManager.LoadScene("PlayerScene");
         }
     }
 
