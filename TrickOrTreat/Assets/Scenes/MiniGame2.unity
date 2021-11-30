@@ -976,9 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151002758}
   - component: {fileID: 1151002757}
-  - component: {fileID: 1151002759}
   - component: {fileID: 1151002760}
-  - component: {fileID: 1151002764}
   - component: {fileID: 1151002762}
   - component: {fileID: 1151002763}
   - component: {fileID: 1151002761}
@@ -1056,34 +1054,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1151002759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151002756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5556993d64ed7ed4f81751932d0bf628, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JumpForce: 700
-  m_CrouchSpeed: 0.4
-  m_MovementSmoothing: 0.05
-  m_AirControl: 1
-  m_WhatIsGround:
-    serializedVersion: 2
-    m_Bits: 55
-  m_GroundCheck: {fileID: 0}
-  m_CeilingCheck: {fileID: 0}
-  m_CrouchDisableCollider: {fileID: 0}
-  OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!50 &1151002760
 Rigidbody2D:
   serializedVersion: 4
@@ -1165,20 +1135,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1151002764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151002756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7aa0e4e86222a48b7395f5a32611f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1151002760}
-  moveSpeed: 1.05
 --- !u!114 &1151002765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,6 +1151,9 @@ MonoBehaviour:
   - {fileID: 1037075722}
   - {fileID: 184061665}
   - {fileID: 549199831}
+  sprite: {fileID: 1151002757}
+  flickerAmnt: 5
+  flickerDuration: 0.1
 --- !u!1 &1333656777
 GameObject:
   m_ObjectHideFlags: 0
