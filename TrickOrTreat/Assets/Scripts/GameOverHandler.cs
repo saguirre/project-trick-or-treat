@@ -16,7 +16,15 @@ public class GameOverHandler : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("PlayerScene");
+            StartCoroutine(ChangeScene());
+
         }
     }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PlayerScene");
+    }
+
 }
