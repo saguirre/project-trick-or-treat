@@ -12,6 +12,7 @@ public class HeartSystem : MonoBehaviour
     public static bool canTakeDamage;
     public int flickerAmnt;
     public float flickerDuration;
+    private Animator animator;
 
     void Start()
     {
@@ -27,6 +28,15 @@ public class HeartSystem : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Player collision");
+        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Skull") || collision.gameObject.CompareTag("Zombie"))
+        {
+            TakeDamage(1);
+        }
+    }
+
     public void TakeDamage(int damage)
     {
         Debug.Log("Player heart damaged");
@@ -39,23 +49,20 @@ public class HeartSystem : MonoBehaviour
             {
                 dead = true;
             }
-            SoundManagerScript.PlaySound("playerHit");
-            StartCoroutine(DamageFlicker());
-        }
-    }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Player collision");
-        if (collision.gameObject.CompareTag("Rock") || collision.gameObject.CompareTag("Skull") || collision.gameObject.CompareTag("Zombie"))
-        {
-            TakeDamage(1);
+            SoundManagerScript.PlaySound("playerHit");
+            animator = gameObject.GetComponent<Animator>();
+            animator.Play("Damage", 0, 0.0f);
+            
+            StartCoroutine(DamageFlicker());
         }
     }
 
     IEnumerator DamageFlicker()
     {
+        this.GetComponent<BoxCollider2D>().enabled = false; 
         canTakeDamage = false;
+
         for (int i = 0; i < flickerAmnt; i++)
         {
             sprite.color = new Color(1f, 1f, 1f, .5f);
@@ -64,5 +71,6 @@ public class HeartSystem : MonoBehaviour
             yield return new WaitForSeconds(flickerDuration);
         }
         canTakeDamage = true;
+        this.GetComponent<BoxCollider2D>().enabled = true; 
     }
 }
