@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour
     public void RemoveKey(Key.KeyType keyType) {
         keyList.Remove(keyType);
     }
+
     public bool ContainsKey(Key.KeyType keyType) {
         return keyList.Contains(keyType);
     }
@@ -31,7 +32,7 @@ public class Inventory : MonoBehaviour
 
         KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
         if(keyDoor != null){
-            if(ContainsKey(keyDoor.GetKeyType())){
+            if(Singleton.Instance.ContainsKey(keyDoor.GetKeyType())){
                 RemoveKey(keyDoor.GetKeyType());
                 keyDoor.OpenDoor();
             }
