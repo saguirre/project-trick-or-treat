@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 305550021}
   - component: {fileID: 305550020}
   - component: {fileID: 305550019}
+  - component: {fileID: 305550025}
   m_Layer: 3
   m_Name: Skull 3
   m_TagString: Skull
@@ -403,6 +404,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &305550025
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305550018}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5f9cb980901db6499ffa78e85082a01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &348588764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1431,7 @@ GameObject:
   - component: {fileID: 1452688026}
   - component: {fileID: 1452688025}
   - component: {fileID: 1452688024}
+  - component: {fileID: 1452688030}
   m_Layer: 3
   m_Name: Skull 2
   m_TagString: Skull
@@ -1555,6 +1576,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1452688030
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452688023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5f9cb980901db6499ffa78e85082a01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1489040593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1778,7 @@ GameObject:
   - component: {fileID: 1978366894}
   - component: {fileID: 1978366893}
   - component: {fileID: 1978366896}
+  - component: {fileID: 1978366897}
   m_Layer: 3
   m_Name: Skull
   m_TagString: Skull
@@ -1882,6 +1923,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15908839, y: 0.16604778}
   m_EdgeRadius: 0
+--- !u!95 &1978366897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978366890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5f9cb980901db6499ffa78e85082a01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2114679465
 GameObject:
   m_ObjectHideFlags: 0
