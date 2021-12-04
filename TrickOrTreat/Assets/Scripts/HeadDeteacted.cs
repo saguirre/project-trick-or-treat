@@ -29,4 +29,9 @@ public class HeadDeteacted : MonoBehaviour
         Enemy.GetComponent<Collider2D>().enabled = false;
         dead = true;
     }
+
+    public void Kill()
+    {
+        dead = true;
+    }
 }
