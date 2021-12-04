@@ -11,6 +11,7 @@ TagManager:
   - Skull
   - Timer
   - Zombie
+  - Candy
   layers:
   - Default
   - TransparentFX
