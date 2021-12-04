@@ -39,7 +39,14 @@ public class MinigameTimer : MonoBehaviour
                 if(minigameNumber == 3){
                     Singleton.Instance.inv.Add(Key.KeyType.Blue);
                 }
-                SceneManager.LoadScene("NiceJob");
+                if(minigameNumber == 4)
+                {
+                    Debug.Log("Finish!!!!!!!");
+                }
+                else
+                {
+                    SceneManager.LoadScene("NiceJob");
+                }
             }
         }
     }
