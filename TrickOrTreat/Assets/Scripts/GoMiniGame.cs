@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoMiniGame2 : MonoBehaviour
+public class GoMiniGame : MonoBehaviour
 {
+    public string scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class GoMiniGame2 : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             SoundManagerScript.PlaySound("footStep");
-            SceneManager.LoadScene("MiniGame2");
+            SceneManager.LoadScene(scene);
         }
     }
 }

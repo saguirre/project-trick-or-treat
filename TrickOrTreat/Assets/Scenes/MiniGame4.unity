@@ -1247,7 +1247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcccbf41c19d3e149b16ddf653bc581b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 35
+  timeRemaining: 45
   timerIsRunning: 0
   timeText: {fileID: 616550065}
   minigameNumber: 4
