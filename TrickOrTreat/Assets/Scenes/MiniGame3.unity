@@ -1428,6 +1428,7 @@ MonoBehaviour:
   timeRemaining: 20
   timerIsRunning: 0
   timeText: {fileID: 1612653348}
+  minigameNumber: 3
 --- !u!4 &1964906426
 Transform:
   m_ObjectHideFlags: 0
