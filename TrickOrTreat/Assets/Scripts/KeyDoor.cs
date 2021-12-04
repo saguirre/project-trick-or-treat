@@ -14,4 +14,13 @@ public class KeyDoor : MonoBehaviour
        gameObject.SetActive(false);
    }
 
+   private void Awake()
+    {
+        if(Singleton.Instance){
+            if(Singleton.Instance.ContainsKey(keyType)){
+                gameObject.SetActive(false);
+            }
+        }
+    }
+
 }
