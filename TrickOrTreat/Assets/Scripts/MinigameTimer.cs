@@ -42,6 +42,7 @@ public class MinigameTimer : MonoBehaviour
                 if(minigameNumber == 4)
                 {
                     Debug.Log("Finish!!!!!!!");
+                    SceneManager.LoadScene("Credits");
                 }
                 else
                 {
