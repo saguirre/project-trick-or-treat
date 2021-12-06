@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NiceJob.unity
     guid: 2802a676df937fe48a89b2dc6e78cfdb
   - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: c6b7427e944394e6eaaede8a8d28612c
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 496c55d710e264a3e974a169663d4d1c
   m_configObjects: {}
