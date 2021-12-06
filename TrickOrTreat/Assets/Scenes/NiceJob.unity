@@ -506,9 +506,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995745859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c767ef9e1e19d40f18c083769c0d2c0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 91c1645c2034c445fbd99fcb609a45bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitSeconds: 2
+  nextScene: PlayerScene
 --- !u!114 &1995745861
 MonoBehaviour:
   m_ObjectHideFlags: 0
