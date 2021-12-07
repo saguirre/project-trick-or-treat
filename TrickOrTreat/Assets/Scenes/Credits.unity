@@ -213,9 +213,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat\n\n\nDamian
-    Mazas \nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago Aguirre
-    \nSebastian del Arca\nValentina Damasco\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n\n\n\n\n"
+  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat
+    Tower\n\n\nDamian Mazas \nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago
+    Aguirre \nSebastian del Arca\nValentina Damasco\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n\n\n\n\n"
 --- !u!222 &42764777
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 830993513}
   - component: {fileID: 830993512}
   - component: {fileID: 830993511}
+  - component: {fileID: 830993514}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -290,6 +291,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830993514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830993510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c1645c2034c445fbd99fcb609a45bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitSeconds: 5
+  nextScene: Intro
 --- !u!1 &1011067196
 GameObject:
   m_ObjectHideFlags: 0
