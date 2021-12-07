@@ -213,9 +213,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat\n\n\n\nDamian
+  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat\n\n\nDamian
     Mazas \nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago Aguirre
-    \nSebastian del Arca\nValentina Damasco\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n\n\n\n\n"
+    \nSebastian del Arca\nValentina Damasco\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n\n\n\n\n"
 --- !u!222 &42764777
 CanvasRenderer:
   m_ObjectHideFlags: 0
