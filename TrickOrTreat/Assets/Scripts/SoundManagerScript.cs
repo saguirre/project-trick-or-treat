@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip jumpPlayerSound, stepsPlayerSound, hitPlayerSound, candy;
+    public static AudioClip jumpPlayerSound, stepsPlayerSound, hitPlayerSound, candySound, hitZombieSound;
     static AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -12,7 +12,8 @@ public class SoundManagerScript : MonoBehaviour
         jumpPlayerSound = Resources.Load<AudioClip>("jumpPlayer");
         stepsPlayerSound = Resources.Load<AudioClip>("footStep");
         hitPlayerSound = Resources.Load<AudioClip>("playerHit");
-        candy = Resources.Load<AudioClip>("candy");
+        candySound = Resources.Load<AudioClip>("candy");
+        hitZombieSound = Resources.Load<AudioClip>("zombieHit");
 
         audioSource = GetComponent<AudioSource> ();
         
@@ -41,7 +42,11 @@ public class SoundManagerScript : MonoBehaviour
             break;
 
         case "candy":
-            audioSource.PlayOneShot(candy);
+            audioSource.PlayOneShot(candySound);
+            break;
+        
+        case "zombieHit":
+            audioSource.PlayOneShot(hitZombieSound);
             break;
          }
 

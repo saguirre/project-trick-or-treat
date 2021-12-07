@@ -29,7 +29,7 @@ public class HeadDeteacted : MonoBehaviour
         Enemy.GetComponent<Collider2D>().enabled = false;
         dead = true;
         
-        SoundManagerScript.PlaySound("candy");
+        SoundManagerScript.PlaySound("zombieHit");
     }
 
     public void Kill()
