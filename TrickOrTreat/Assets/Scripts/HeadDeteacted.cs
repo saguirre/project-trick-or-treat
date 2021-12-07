@@ -28,6 +28,8 @@ public class HeadDeteacted : MonoBehaviour
         Enemy.GetComponent<SpriteRenderer>().flipY = true;
         Enemy.GetComponent<Collider2D>().enabled = false;
         dead = true;
+        
+        SoundManagerScript.PlaySound("candy");
     }
 
     public void Kill()
