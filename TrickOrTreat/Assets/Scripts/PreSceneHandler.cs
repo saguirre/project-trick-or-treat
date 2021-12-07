@@ -7,6 +7,7 @@ public class PreSceneHandler : MonoBehaviour
 {
     public int waitSeconds;
     public string nextScene;
+    public bool resetGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,14 @@ public class PreSceneHandler : MonoBehaviour
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(waitSeconds);
+        
+        if(resetGame)
+        {
+            Singleton.Instance.inv = new List<Key.KeyType>();
+        }
+
         SceneManager.LoadScene(nextScene);
     }
+    
 
 }

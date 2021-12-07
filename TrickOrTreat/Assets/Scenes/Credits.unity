@@ -305,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitSeconds: 5
   nextScene: Intro
+  resetGame: 1
 --- !u!1 &1011067196
 GameObject:
   m_ObjectHideFlags: 0
