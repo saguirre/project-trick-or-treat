@@ -10,7 +10,6 @@ public class MovingSkulls : MonoBehaviour
     void Start()
     {
         new WaitForSeconds(Random.Range(0.2f, 1));
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
     }
 
     void Update()
