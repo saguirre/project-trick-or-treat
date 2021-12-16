@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5429605260516810201}
   - component: {fileID: -4657986087507800251}
   - component: {fileID: -5192991531394525015}
+  - component: {fileID: 5219231799049954473}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5429605260516810200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6831, y: -0.0785, z: 0}
+  m_LocalPosition: {x: 0.6831, y: -0.08, z: 0}
   m_LocalScale: {x: 0.2867094, y: 0.25367263, z: 1}
   m_Children:
   - {fileID: 897942094502230514}
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5429605260516810200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74c2eff777589483bbc911f3c024ec9d, type: 3}
   m_Name: 
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.21659826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.64}
+  m_Size: {x: 1, y: 1.2068033}
   m_EdgeRadius: 0
 --- !u!114 &-5192991531394525015
 MonoBehaviour:
@@ -158,6 +159,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad031b468f8c4c17ba10a6675256562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5219231799049954473
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429605260516810200}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adbd7704dba19d647886f8b2f3dd8da3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9008807153019344694
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008807153019344694}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.549, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5429605260516810207}
@@ -203,7 +223,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.22133999}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -214,7 +234,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.55732006}
   m_EdgeRadius: 0
 --- !u!114 &237312640203023150
 MonoBehaviour:
