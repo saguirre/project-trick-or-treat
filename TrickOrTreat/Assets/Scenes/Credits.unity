@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: -1044.5181}
-  m_SizeDelta: {x: 713.9462, y: 1863.2942}
+  m_AnchoredPosition: {x: 14, y: -909.22}
+  m_SizeDelta: {x: 713.9462, y: 1818.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &42764775
 Animator:
@@ -213,9 +213,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat
-    Tower\n\n\nDamian Mazas \nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago
-    Aguirre \nSebastian del Arca\nValentina Damasco\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n\n\n\n\n"
+  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat Tower\n\nDesigner:\nDamian
+    Mazas \n\nDevelopers:\nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago
+    Aguirre \nSebastian del Arca\nValentina Damasco\n\n\nMusic by Ozzed\n(https://ozzed.net/)\nUsed
+    under CC BY 4.0 License\n\n\n\n\n\n\n\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n"
 --- !u!222 &42764777
 CanvasRenderer:
   m_ObjectHideFlags: 0
