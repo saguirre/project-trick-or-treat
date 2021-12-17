@@ -213,8 +213,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat Tower\n\nDesigner:\nDamian
-    Mazas \n\nDevelopers:\nFacundo Quinteros\nGonzalo Lamela\nGuillermo de Armas\nSantiago
+  m_Text: "To be continued...\n\n\n\n\n\n\n\n\n\n\n\nTrick or Treat Tower\n\nDesigner:\nFacundo
+    Quinteros \n\nDevelopers:\nDamian Mazas\nGonzalo Lamela\nGuillermo de Armas\nSantiago
     Aguirre \nSebastian del Arca\nValentina Damasco\n\n\nMusic by Ozzed\n(https://ozzed.net/)\nUsed
     under CC BY 4.0 License\n\n\n\n\n\n\n\n\n\n\nUniversidad ORT Uruguay\n\n2021\n\n\n\n"
 --- !u!222 &42764777
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c1645c2034c445fbd99fcb609a45bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitSeconds: 5
+  waitSeconds: 2
   nextScene: Intro
   resetGame: 1
 --- !u!1 &1011067196

@@ -511,10 +511,10 @@ RectTransform:
   m_Father: {fileID: 1223868772}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280.4837, y: -259.88}
-  m_SizeDelta: {x: 476.7811, y: 109.24}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 125.56879, y: 36.210983}
+  m_SizeDelta: {x: 233.9035, y: 47.402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533400985
 MonoBehaviour:
@@ -590,8 +590,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c1645c2034c445fbd99fcb609a45bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitSeconds: 5
+  waitSeconds: 2
   nextScene: Credits
+  resetGame: 0
 --- !u!114 &1995745861
 MonoBehaviour:
   m_ObjectHideFlags: 0
